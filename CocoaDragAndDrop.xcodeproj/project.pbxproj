@@ -8,9 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		4F3A234E1F0B562D00518CE4 /* DragDropImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3A234D1F0B562D00518CE4 /* DragDropImageView.swift */; };
+		4F3A236B1F0B5BBC00518CE4 /* CocoaDragAndDropAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3A236A1F0B5BBC00518CE4 /* CocoaDragAndDropAppDelegate.swift */; };
 		D03B310B13CB633800C43A48 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D03B310A13CB633800C43A48 /* Cocoa.framework */; };
 		D03B311513CB633800C43A48 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D03B311313CB633800C43A48 /* InfoPlist.strings */; };
-		D03B311713CB633800C43A48 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D03B311613CB633800C43A48 /* main.m */; };
 		D03B311B13CB633800C43A48 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = D03B311913CB633800C43A48 /* Credits.rtf */; };
 		D03B312113CB633800C43A48 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = D03B311F13CB633800C43A48 /* MainMenu.xib */; };
 		D03B312C13CB6B6D00C43A48 /* DropImageHere.tiff in Resources */ = {isa = PBXBuildFile; fileRef = D03B312A13CB6B6D00C43A48 /* DropImageHere.tiff */; };
@@ -19,6 +19,7 @@
 
 /* Begin PBXFileReference section */
 		4F3A234D1F0B562D00518CE4 /* DragDropImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DragDropImageView.swift; sourceTree = "<group>"; };
+		4F3A236A1F0B5BBC00518CE4 /* CocoaDragAndDropAppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CocoaDragAndDropAppDelegate.swift; sourceTree = "<group>"; };
 		D03B310613CB633800C43A48 /* CocoaDragAndDrop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CocoaDragAndDrop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D03B310A13CB633800C43A48 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		D03B310D13CB633800C43A48 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -26,7 +27,6 @@
 		D03B310F13CB633800C43A48 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D03B311213CB633800C43A48 /* CocoaDragAndDrop-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CocoaDragAndDrop-Info.plist"; sourceTree = "<group>"; };
 		D03B311413CB633800C43A48 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		D03B311613CB633800C43A48 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D03B311A13CB633800C43A48 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
 		D03B312013CB633800C43A48 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		D03B312A13CB6B6D00C43A48 /* DropImageHere.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = DropImageHere.tiff; sourceTree = "<group>"; };
@@ -85,6 +85,7 @@
 		D03B311013CB633800C43A48 /* CocoaDragAndDrop */ = {
 			isa = PBXGroup;
 			children = (
+				4F3A236A1F0B5BBC00518CE4 /* CocoaDragAndDropAppDelegate.swift */,
 				4F3A234D1F0B562D00518CE4 /* DragDropImageView.swift */,
 				D03B311F13CB633800C43A48 /* MainMenu.xib */,
 				D03B311113CB633800C43A48 /* Supporting Files */,
@@ -98,7 +99,6 @@
 				D03B312A13CB6B6D00C43A48 /* DropImageHere.tiff */,
 				D03B311213CB633800C43A48 /* CocoaDragAndDrop-Info.plist */,
 				D03B311313CB633800C43A48 /* InfoPlist.strings */,
-				D03B311613CB633800C43A48 /* main.m */,
 				D03B311913CB633800C43A48 /* Credits.rtf */,
 			);
 			name = "Supporting Files";
@@ -174,7 +174,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D03B311713CB633800C43A48 /* main.m in Sources */,
+				4F3A236B1F0B5BBC00518CE4 /* CocoaDragAndDropAppDelegate.swift in Sources */,
 				4F3A234E1F0B562D00518CE4 /* DragDropImageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

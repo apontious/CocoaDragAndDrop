@@ -28,7 +28,6 @@
 		D03B311213CB633800C43A48 /* CocoaDragAndDrop-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CocoaDragAndDrop-Info.plist"; sourceTree = "<group>"; };
 		D03B311413CB633800C43A48 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D03B311613CB633800C43A48 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		D03B311813CB633800C43A48 /* CocoaDragAndDrop-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CocoaDragAndDrop-Prefix.pch"; sourceTree = "<group>"; };
 		D03B311A13CB633800C43A48 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
 		D03B312013CB633800C43A48 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		D03B312A13CB6B6D00C43A48 /* DropImageHere.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = DropImageHere.tiff; sourceTree = "<group>"; };
@@ -102,7 +101,6 @@
 				D03B311213CB633800C43A48 /* CocoaDragAndDrop-Info.plist */,
 				D03B311313CB633800C43A48 /* InfoPlist.strings */,
 				D03B311613CB633800C43A48 /* main.m */,
-				D03B311813CB633800C43A48 /* CocoaDragAndDrop-Prefix.pch */,
 				D03B311913CB633800C43A48 /* Credits.rtf */,
 			);
 			name = "Supporting Files";
@@ -262,8 +260,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "CocoaDragAndDrop/CocoaDragAndDrop-Prefix.pch";
 				INFOPLIST_FILE = "CocoaDragAndDrop/CocoaDragAndDrop-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -278,8 +274,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "CocoaDragAndDrop/CocoaDragAndDrop-Prefix.pch";
 				INFOPLIST_FILE = "CocoaDragAndDrop/CocoaDragAndDrop-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";

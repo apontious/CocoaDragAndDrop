@@ -12,7 +12,6 @@
 		D03B311513CB633800C43A48 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D03B311313CB633800C43A48 /* InfoPlist.strings */; };
 		D03B311713CB633800C43A48 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D03B311613CB633800C43A48 /* main.m */; };
 		D03B311B13CB633800C43A48 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = D03B311913CB633800C43A48 /* Credits.rtf */; };
-		D03B311E13CB633800C43A48 /* CocoaDragAndDropAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D03B311D13CB633800C43A48 /* CocoaDragAndDropAppDelegate.m */; };
 		D03B312113CB633800C43A48 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = D03B311F13CB633800C43A48 /* MainMenu.xib */; };
 		D03B312C13CB6B6D00C43A48 /* DropImageHere.tiff in Resources */ = {isa = PBXBuildFile; fileRef = D03B312A13CB6B6D00C43A48 /* DropImageHere.tiff */; };
 		D03B312D13CB6B6D00C43A48 /* ReadMe.txt in Resources */ = {isa = PBXBuildFile; fileRef = D03B312B13CB6B6D00C43A48 /* ReadMe.txt */; };
@@ -31,8 +30,6 @@
 		D03B311613CB633800C43A48 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D03B311813CB633800C43A48 /* CocoaDragAndDrop-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CocoaDragAndDrop-Prefix.pch"; sourceTree = "<group>"; };
 		D03B311A13CB633800C43A48 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
-		D03B311C13CB633800C43A48 /* CocoaDragAndDropAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CocoaDragAndDropAppDelegate.h; sourceTree = "<group>"; };
-		D03B311D13CB633800C43A48 /* CocoaDragAndDropAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CocoaDragAndDropAppDelegate.m; sourceTree = "<group>"; };
 		D03B312013CB633800C43A48 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		D03B312A13CB6B6D00C43A48 /* DropImageHere.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = DropImageHere.tiff; sourceTree = "<group>"; };
 		D03B312B13CB6B6D00C43A48 /* ReadMe.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = ReadMe.txt; path = CocoaDragAndDrop/ReadMe.txt; sourceTree = "<group>"; };
@@ -90,8 +87,6 @@
 		D03B311013CB633800C43A48 /* CocoaDragAndDrop */ = {
 			isa = PBXGroup;
 			children = (
-				D03B311C13CB633800C43A48 /* CocoaDragAndDropAppDelegate.h */,
-				D03B311D13CB633800C43A48 /* CocoaDragAndDropAppDelegate.m */,
 				4F3A234D1F0B562D00518CE4 /* DragDropImageView.swift */,
 				D03B311F13CB633800C43A48 /* MainMenu.xib */,
 				D03B311113CB633800C43A48 /* Supporting Files */,
@@ -184,7 +179,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				D03B311713CB633800C43A48 /* main.m in Sources */,
-				D03B311E13CB633800C43A48 /* CocoaDragAndDropAppDelegate.m in Sources */,
 				4F3A234E1F0B562D00518CE4 /* DragDropImageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

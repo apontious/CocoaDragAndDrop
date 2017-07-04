@@ -7,18 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4F3A234E1F0B562D00518CE4 /* DragDropImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3A234D1F0B562D00518CE4 /* DragDropImageView.swift */; };
 		D03B310B13CB633800C43A48 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D03B310A13CB633800C43A48 /* Cocoa.framework */; };
 		D03B311513CB633800C43A48 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D03B311313CB633800C43A48 /* InfoPlist.strings */; };
 		D03B311713CB633800C43A48 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D03B311613CB633800C43A48 /* main.m */; };
 		D03B311B13CB633800C43A48 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = D03B311913CB633800C43A48 /* Credits.rtf */; };
 		D03B311E13CB633800C43A48 /* CocoaDragAndDropAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D03B311D13CB633800C43A48 /* CocoaDragAndDropAppDelegate.m */; };
 		D03B312113CB633800C43A48 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = D03B311F13CB633800C43A48 /* MainMenu.xib */; };
-		D03B312913CB6AD300C43A48 /* DragDropImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = D03B312813CB6AD300C43A48 /* DragDropImageView.m */; };
 		D03B312C13CB6B6D00C43A48 /* DropImageHere.tiff in Resources */ = {isa = PBXBuildFile; fileRef = D03B312A13CB6B6D00C43A48 /* DropImageHere.tiff */; };
 		D03B312D13CB6B6D00C43A48 /* ReadMe.txt in Resources */ = {isa = PBXBuildFile; fileRef = D03B312B13CB6B6D00C43A48 /* ReadMe.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4F3A234C1F0B562C00518CE4 /* CocoaDragAndDrop-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CocoaDragAndDrop-Bridging-Header.h"; sourceTree = "<group>"; };
+		4F3A234D1F0B562D00518CE4 /* DragDropImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DragDropImageView.swift; sourceTree = "<group>"; };
 		D03B310613CB633800C43A48 /* CocoaDragAndDrop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CocoaDragAndDrop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D03B310A13CB633800C43A48 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		D03B310D13CB633800C43A48 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -32,8 +34,6 @@
 		D03B311C13CB633800C43A48 /* CocoaDragAndDropAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CocoaDragAndDropAppDelegate.h; sourceTree = "<group>"; };
 		D03B311D13CB633800C43A48 /* CocoaDragAndDropAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CocoaDragAndDropAppDelegate.m; sourceTree = "<group>"; };
 		D03B312013CB633800C43A48 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		D03B312713CB6AD300C43A48 /* DragDropImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DragDropImageView.h; sourceTree = "<group>"; };
-		D03B312813CB6AD300C43A48 /* DragDropImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DragDropImageView.m; sourceTree = "<group>"; };
 		D03B312A13CB6B6D00C43A48 /* DropImageHere.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = DropImageHere.tiff; sourceTree = "<group>"; };
 		D03B312B13CB6B6D00C43A48 /* ReadMe.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = ReadMe.txt; path = CocoaDragAndDrop/ReadMe.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -90,12 +90,12 @@
 		D03B311013CB633800C43A48 /* CocoaDragAndDrop */ = {
 			isa = PBXGroup;
 			children = (
-				D03B312713CB6AD300C43A48 /* DragDropImageView.h */,
-				D03B312813CB6AD300C43A48 /* DragDropImageView.m */,
 				D03B311C13CB633800C43A48 /* CocoaDragAndDropAppDelegate.h */,
 				D03B311D13CB633800C43A48 /* CocoaDragAndDropAppDelegate.m */,
+				4F3A234D1F0B562D00518CE4 /* DragDropImageView.swift */,
 				D03B311F13CB633800C43A48 /* MainMenu.xib */,
 				D03B311113CB633800C43A48 /* Supporting Files */,
+				4F3A234C1F0B562C00518CE4 /* CocoaDragAndDrop-Bridging-Header.h */,
 			);
 			path = CocoaDragAndDrop;
 			sourceTree = "<group>";
@@ -140,6 +140,11 @@
 			isa = PBXProject;
 			attributes = {
 				ORGANIZATIONNAME = "Apple, Inc";
+				TargetAttributes = {
+					D03B310513CB633800C43A48 = {
+						LastSwiftMigration = 0830;
+					};
+				};
 			};
 			buildConfigurationList = D03B310013CB633700C43A48 /* Build configuration list for PBXProject "CocoaDragAndDrop" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -180,7 +185,7 @@
 			files = (
 				D03B311713CB633800C43A48 /* main.m in Sources */,
 				D03B311E13CB633800C43A48 /* CocoaDragAndDropAppDelegate.m in Sources */,
-				D03B312913CB6AD300C43A48 /* DragDropImageView.m in Sources */,
+				4F3A234E1F0B562D00518CE4 /* DragDropImageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -234,7 +239,7 @@
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
 			};
@@ -254,7 +259,7 @@
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				SDKROOT = macosx;
 			};
 			name = Release;
@@ -262,10 +267,15 @@
 		D03B312513CB633800C43A48 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CocoaDragAndDrop/CocoaDragAndDrop-Prefix.pch";
 				INFOPLIST_FILE = "CocoaDragAndDrop/CocoaDragAndDrop-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CocoaDragAndDrop/CocoaDragAndDrop-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -273,10 +283,14 @@
 		D03B312613CB633800C43A48 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CocoaDragAndDrop/CocoaDragAndDrop-Prefix.pch";
 				INFOPLIST_FILE = "CocoaDragAndDrop/CocoaDragAndDrop-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CocoaDragAndDrop/CocoaDragAndDrop-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

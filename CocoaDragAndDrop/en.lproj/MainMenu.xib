@@ -641,7 +641,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="211" height="192"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView id="543" customClass="DragDropImageView">
+                    <imageView id="543" customClass="DragDropImageView" customModule="CocoaDragAndDrop" customModuleProvider="target">
                         <rect key="frame" x="-3" y="-3" width="217" height="198"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="axesIndependently" image="DropImageHere" id="544"/>
@@ -664,7 +664,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="211" height="192"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView id="538" customClass="DragDropImageView">
+                    <imageView id="538" customClass="DragDropImageView" customModule="CocoaDragAndDrop" customModuleProvider="target">
                         <rect key="frame" x="-3" y="-3" width="217" height="198"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="axesIndependently" image="DropImageHere" id="539"/>

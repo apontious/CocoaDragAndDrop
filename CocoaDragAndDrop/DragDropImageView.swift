@@ -163,7 +163,7 @@ class DragDropImageView : NSImageView, NSDraggingSource, NSWindowDelegate, NSPas
 			
 		// By using this fall through pattern, we will remain compatible if the contexts get more precise in the future.
 		case .withinApplication:
-			return.copy
+			return .copy
 		}
 	}
 	
@@ -278,19 +278,19 @@ class DragDropImageView : NSImageView, NSDraggingSource, NSWindowDelegate, NSPas
 	
 	#if swift(>=4.0)
 	func pasteboard(_ pasteboard: NSPasteboard?, item: NSPasteboardItem, provideDataForType type: NSPasteboard.PasteboardType)
-{
-	/*------------------------------------------------------
-	method called by pasteboard to support promised
-	drag types.
-	--------------------------------------------------------*/
-	// Sender has accepted the drag and now we need to send the data for the type we promised.
-	if type == NSPasteboard.PasteboardType.tiff {
-	// Set data for TIFF type on the pasteboard as requested.
-	pasteboard?.setData(image?.tiffRepresentation, forType: NSPasteboard.PasteboardType.tiff)
-	} else if type == NSPasteboard.PasteboardType.pdf {
-	// Set data for PDF type on the pasteboard as requested.
-	pasteboard?.setData(dataWithPDF(inside: bounds), forType: NSPasteboard.PasteboardType.pdf)
-	}
+	{
+		/*------------------------------------------------------
+		method called by pasteboard to support promised
+		drag types.
+		--------------------------------------------------------*/
+		// Sender has accepted the drag and now we need to send the data for the type we promised.
+		if type == NSPasteboard.PasteboardType.tiff {
+			// Set data for TIFF type on the pasteboard as requested.
+			pasteboard?.setData(image?.tiffRepresentation, forType: NSPasteboard.PasteboardType.tiff)
+		} else if type == NSPasteboard.PasteboardType.pdf {
+			// Set data for PDF type on the pasteboard as requested.
+			pasteboard?.setData(dataWithPDF(inside: bounds), forType: NSPasteboard.PasteboardType.pdf)
+		}
 	}
 	#else
 	func pasteboard(_ pasteboard: NSPasteboard?, item: NSPasteboardItem, provideDataForType type: String)

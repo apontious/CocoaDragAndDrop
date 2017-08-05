@@ -66,9 +66,9 @@ class DragDropImageView : NSImageView, NSDraggingSource, NSWindowDelegate, NSPas
 		super.init(coder: aDecoder)
 		// Register for all the image types we can display.
 		#if swift(>=4.0)
-			registerForDraggedTypes(NSImage.imagePasteboardTypes())
+			registerForDraggedTypes(NSImage.imageTypes())
 		#else
-			register(forDraggedTypes: NSImage.imagePasteboardTypes())
+			register(forDraggedTypes: NSImage.imageTypes())
 		#endif
 	}
 	
